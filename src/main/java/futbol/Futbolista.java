@@ -41,11 +41,7 @@ public abstract class Futbolista implements Comparable<Object>{
 	public void setPosicion(String posicion) {
 		this.posicion = posicion;
 	}
-	 public boolean equals(Futbolista f) {
-	        return f == this;
-	    }; 
-
-		
-	
-	
+	public boolean equals(Futbolista f) {
+	    return f == this;
+	} 
 }
