@@ -19,7 +19,8 @@ public abstract class Futbolista implements Comparable<Object>{
 		this.posicion = "delantero";
 	}
 	public String toString() {
-		return "El futbolista "+nombre+" tiene "+edad+ ", y juega de "+posicion;
+		return "El futbolista "+nombre+" tiene "+edad+ ", y "
+		 	+ "juega de "+posicion;
 	}
 	public boolean jugarConLasManos() {
             return false;
