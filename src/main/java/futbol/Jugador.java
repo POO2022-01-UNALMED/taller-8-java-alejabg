@@ -1,18 +1,19 @@
 package futbol;
 
-public class Jugador extends Futbolista{
-        public short golesMarcados;
+
+public class Jugador extends Futbolista   {
+	public short golesMarcados;
 	public byte dorsal;
 	public Jugador(String nombre, int edad,String a, short golesMarcados, byte dorsal) {
-	    super(nombre, edad, a);
-            this.golesMarcados = golesMarcados;
-	    this.dorsal = dorsal;
+		super(nombre, edad, a);
+		this.golesMarcados = golesMarcados;
+		this.dorsal = dorsal;
 	}
 	
 	public Jugador( ) {
-	    super();
-	    this.golesMarcados = 289;
-	    this.dorsal = 7;
+		super();
+		this.golesMarcados = 289;
+		this.dorsal = 7;
 	}
 	
 	public short getGolesMarcados() {
@@ -38,24 +39,21 @@ public class Jugador extends Futbolista{
 		+" con el dorsal "+dorsal+ ". Ha marcado "+golesMarcados;
 	}
 	public boolean jugarConLasManos() {
-	    if(this instanceof Futbolista) {
-		return true;
-	    }else {
-		return false;
-	    }
+		if(this instanceof Futbolista) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
-	
 	public int compareTo(Object o) {
 		return(java.lang.Math.abs(((Jugador)o).getEdad()-this.getEdad()));
 	}
 	
 	
 	
-	
-	
-	
-	
 
 }
+
     
 
